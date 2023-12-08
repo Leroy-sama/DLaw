@@ -116,21 +116,25 @@ nav {
 
 /* PROJECTS */
 
-.projects__wrapper {
+.projects__wrapper,
+.challenges__wrapper {
     padding: 1em;
 }
 
-.projects__head {
+.projects__head,
+.fem-challenges {
     padding: 1em 0;
 }
 
-.projects__container {
+.projects__container,
+.challenges__container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2em;
 }
 
-.project__item {
+.project__item,
+.challenge__item {
     display: grid;
     gap: 1em;
     max-width: 500px;
@@ -203,7 +207,8 @@ nav {
         gap: 1.5em;
     }
 
-    .projects__container {
+    .projects__container,
+    .challenges__container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
