@@ -1,210 +1,266 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Outfit", sans-serif;
-    text-decoration: none;
-    line-height: 1.5;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Basic", sans-serif;
+	text-decoration: none;
+	line-height: 1.5;
 }
 
 :root {
-    --color--01: hsl(0, 0%, 8%);
-    --color--02: hsl(0, 0%, 14%);
-    --color--03: hsl(153, 71%, 59%);
-    --color--04: hsl(0, 0%, 100%);
-    --color--05: hsl(0, 0%, 85%);
-    --color--06: hsl(7, 100%, 68%);
+	--color--01: hsl(0, 0%, 8%);
+	--color--02: hsl(0, 0%, 14%);
+	--color--03: hsl(153, 71%, 59%);
+	--color--04: hsl(0, 0%, 100%);
+	--color--05: hsl(0, 0%, 85%);
+	--color--06: hsl(7, 100%, 68%);
+    --primaryColor: #ff5277;
+    --primaryColorOffset: #ff2957;
+    --textColor: #ffffff;
+    --textColorOffset: #f4f4f4;
+}
+
+body {
+    background-color: #0e141b;
+    /* color: #f4f4f4; */
 }
 
 img {
-    width: 100%;
+	width: 100%;
 }
 
 nav {
-    display: flex;
-    gap: 1em;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
+	display: flex;
+	gap: 1em;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
 }
 
-.nombre {
-    background-color: var(--color--06);
-    display: inline-block;
-    font-weight: 600;
+.description span {
+	color: var(--textColorOffset);
+	display: inline-block;
+    font-size: 1.5rem;    
 }
 
-.contact {
-    background-color: var(--color--06);
-    margin: 2em 0;
-    color: var(--color--01);
-    padding: 0.7em;
-    border: 2px solid var(--color--06);
+.about__head {
+    font-family: 'Playfair Display';
+    font-size: 3rem;
+    color: var(--textColor);
 }
 
-.contact:hover {
-    background-color: white;
-    color: var(--color--06);
-    border-bottom: 2px solid var(--color--06);
-    border-top: 2px solid var(--color--06);
+.about__desc {
+    font-size: 1.2rem;  
+    color: var(--textColorOffset);  
+}
+
+.cta {
+	background-color: var(--primaryColorOffset);
+	margin: 2em 0;
+	color: var(--textColor);
+	padding: 0.7em 1.5em;
+}
+
+.cta:hover {
+	background-color: var(--primaryColor);
+	
 }
 
 .icons {
-    display: flex;
-    gap: 1em;
+	display: flex;
+	gap: 1em;
 }
 
 .icons img {
-    width: 20px;
+	width: 20px;
 }
 
 .description p {
-    padding: 1em 0;
+	padding: 1em 0;
 }
 
 .skills-container {
-    display: grid;
-    place-content: center;
-    gap: 1em;
-    margin: 1em 0;
+	display: grid;
+	place-content: center;
+	gap: 1em;
+	margin: 1em 0;
 }
 
 .skills {
-    display: grid;
-    gap: 1em;
+	display: grid;
+	gap: 1em;
 }
 
 .skills__heading {
-    font-size: x-large;
-    color: var(--color--01);
+	font-size: x-large;
+	color: var(--color--01);
 }
 
 .skills__heading::after {
-    content: "";
-    display: block;
-    width: 85%;
-    height: 5px;
-    background-color: var(--color--06);
-    margin: auto;
+	content: "";
+	display: block;
+	width: 85%;
+	height: 5px;
+	background-color: var(--color--06);
+	margin: auto;
 }
 
 .skills div {
-    background: linear-gradient(rgb(49, 49, 243), rgb(221, 175, 221));
-    padding: 1em;
-    text-align: center;
-    color: var(--color--04);
+	background: linear-gradient(rgb(49, 49, 243), rgb(221, 175, 221));
+	padding: 1em;
+	text-align: center;
+	color: var(--color--04);
 }
 
 .projects__head {
-    color: var(--color--06);
+	color: var(--color--06);
 }
 
 .project__item h3 {
-    color: var(--color--01);
+	color: var(--color--01);
 }
 
 #about {
-    padding: 0 1em;
+	padding: 0 1em;
 }
 
 /* PROJECTS */
 
 .projects__wrapper,
 .challenges__wrapper {
-    padding: 1em;
+	padding: 1em;
 }
 
 .projects__head,
 .fem-challenges {
-    padding: 1em 0;
+	padding: 1em 0;
+    color: var(--textColorOffset);
 }
 
 .projects__container,
 .challenges__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2em;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2em;
 }
 
 .project__item,
 .challenge__item {
-    display: grid;
-    gap: 1em;
-    max-width: 500px;
+	
+	max-width: 500px;
+}
+
+.project__item-head {
+    color: var(--textColorOffset);
 }
 
 .project__tags {
-    display: flex;
-    gap: 1em;
+	display: flex;
+	gap: 1em;
 }
 
 .project__tags span {
-    border-bottom: 1px solid var(--color--03);
+	border-bottom: 1px solid var(--color--03);
 }
 
 .project__links {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .project__links a {
-    color: var(--color--06);
-    padding: 0.5em;
-    border: 1px solid var(--color--06);
+	color: var(--color--06);
+	padding: 0.5em;
+	border: 1px solid var(--color--06);
 }
 
 .project__links a:hover {
-    color: white;
-    background-color: var(--color--06);
+	color: white;
+	background-color: var(--color--06);
 }
 
 /* CONTACT */
 
+#contact {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .contact__wrapper {
-    text-align: center;
+	text-align: center;
+}
+
+.contact__text span {
+    font-size: 1.5rem;
+    color: var(--textColorOffset);
+}
+
+.contact__heading {
+    font-family: 'Playfair Display';
+    color: var(--textColor);
+    font-size: 2.5rem;
+}
+
+.contact__description {
+    color: var(--textColorOffset);
+}
+
+.cta-box {
+    padding: 3em 0;
+}
+
+.cta__last {
+    margin: 2em 0;
 }
 
 .the__links {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
+	display: flex;
+	justify-content: center;
+	gap: 1em;
 }
 
 .fa-github,
 .fa-envelope {
-    color: black;
+	color: black;
 }
 
 .fa-heart {
-    color: salmon;
+	color: salmon;
 }
 
 /* 600px */
 @media (min-width: 37.5em) {
-    nav {
-        flex-direction: row;
-        gap: 5em;
+	nav {
+		flex-direction: row;
+		gap: 5em;
+	}
+
+	#about {
+		/* display: grid;
+		grid-template-columns: 1fr 1fr; */
+        max-width: 1200px;
+        margin: 0 auto;
+	}
+
+	.skills__heading {
+		text-align: center;
+	}
+
+	.skills {
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5em;
+	}
+
+    .projects {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
-    #about {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .skills__heading {
-        text-align: center;
-    }
-
-    .skills {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5em;
-    }
-
-    .projects__container,
-    .challenges__container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+	.projects__container,
+	.challenges__container {
+		
+	}
 }

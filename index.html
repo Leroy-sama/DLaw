@@ -32,18 +32,19 @@
 
     <section id="about">
         <div class="description">
-            <h1>
-                Hello there, <span class="nombre">I'm Leroy.</span>
+            <span>
+                Hello, my name is <span class="nombre">Leroy.</span>
+            </span>
+            <h1 class="about__head">
+                I make the web work
             </h1>
-            <p>
+            <p class="about__desc">
                 A dedicated Frontend Developer with a keen focus on creating immersive and responsive web
-                experiences. My weapon of choice is Vue.js, and I thrive on turning ideas into elegant, user-friendly
-                interfaces. When I'm not coding, I spend time
-                with friends, hiking, bike riding or watching anime.
+                experiences. 
             </p>
-            <a class="contact" href="mailto:ntruderleroy@gmail.com">contact me</a>
+            <a class="cta" href="mailto:ntruderleroy@gmail.com">contact me</a>
         </div>
-        <div class="skills-container">
+        <!-- <div class="skills-container">
             <h3 class="skills__heading">My skills</h3>
             <div class="skills">
                 <div>HTML 5</div>
@@ -52,17 +53,32 @@
                 <div>Vue.js</div>
                 <div>Tailwind</div>
                 <div>Firebase</div>
+                <div>TypeSript</div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section id="projects" class="projects">
         <div class="projects__wrapper">
-            <h2 class="projects__head">Projects</h2>
+            <h2 class="projects__head">Some things I have built</h2>
             <div class="projects__container">
                 <div class="project__item">
+                    <img src="assets/img/djxboy.png" alt="challenge 2" width="343">
+                    <div class="item__info">
+                        <h3 class="project__item-head">Dj Xboy 254</h3>
+                    <p class="project__tags">
+                        <span>Vue.js</span>
+                        <span>CSS</span>
+                    </p>
+                    </div>
+                    <div class="project__links">
+                        <a href="https://dj-xboy.vercel.app/" target="_blank">View Project</a>
+                        <a href="https://github.com/Leroy-sama/DJXboy" target="_blank">View Code</a>
+                    </div>
+                </div>
+                <div class="project__item">
                     <img src="assets/img/akatsuki.png" alt="challenge 1" width="343">
-                    <h3>Akatsuki</h3>
+                    <h3 class="project__item-head">Akatsuki</h3>
                     <p class="project__tags">
                         <span>HTML</span>
                         <span>CSS</span>
@@ -73,25 +89,16 @@
                         <a href="https://github.com/Leroy-sama/Akatsuki" target="_blank">View Code</a>
                     </div>
                 </div>
-                <div class="project__item">
-                    <img src="assets/img/djxboy.png" alt="challenge 2" width="343">
-                    <h3>Dj Xboy 254</h3>
-                    <p class="project__tags">
-                        <span>Vue.js</span>
-                        <span>CSS</span>
-                    </p>
-                    <div class="project__links">
-                        <a href="https://dj-xboy.vercel.app/" target="_blank">View Project</a>
-                        <a href="https://github.com/Leroy-sama/DJXboy" target="_blank">View Code</a>
-                    </div>
-                </div>
+                
                 <div class="project__item">
                     <img src="assets/img/kobi blogs.png" alt="djconnect" width="343">
-                    <h3>KobiBlogs</h3>
+                    <div class="item__info">
+                        <h3 class="project__item-head">KobiBlogs</h3>
                     <p class="project__tags">
                         <span>Vue.js</span>
                         <span>CSS</span>
                     </p>
+                    </div>
                     <div class="project__links">
                         <a href="https://kobi-blogs.vercel.app/home" target="_blank">View Project</a>
                         <a href="https://github.com/Leroy-sama/KobiBlogs" target="_blank">View Code</a>
@@ -147,23 +154,24 @@
     <section id="contact">
         <div class="contact__wrapper">
             <div class="contact__text">
-                <h2 class="contact__heading">contact</h2>
+                <span>contact</span>
+                <h2 class="contact__heading">Get In Touch</h2>
                 <p class="contact__description">
-                    Feel free to reach out to me through these links
+                    Got a question or proposal, or just want to say hello? Feel free to reach out to me
                 </p>
+                <div class="cta-box">
+                    <a class="cta cta__last" href="#">Say Hello</a>
+                </div>
             </div>
             <div class="links">
                 <div class="the__links">
                     <a href="https://github.com/Leroy-sama/"><i class="fa-brands fa-github"></i></a>
                     <a href="mailto:ntruderleroy@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                 </div>
-                <!-- <p>
-                    An <a href="#">Akatsuki</a> production.
-                </p> -->
-                <p>
-                    Crafted with <span><i class="fa-solid fa-heart"></i></span>
-                </p>
             </div>
+            <p>
+                Crafted with <span><i class="fa-solid fa-heart"></i></span>
+            </p>
         </div>
 
     </section>
