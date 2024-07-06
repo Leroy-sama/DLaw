@@ -1,9 +1,12 @@
-const skillDiv = document.querySelector('.skil-div')
+const skillDiv = document.querySelectorAll('.skil-div')
 
-skillDiv.onmousemove = function(e) {
-    const x = e.pageX - skillDiv.offsetLeft
-    const y = e.pageY - skillDiv.offsetTop
+skillDiv.forEach(skillDiv => {
+    skillDiv.addEventListener('mouseover', (e) => {
+        let x = e.pageX - skillDiv.offsetLeft
+        let y = e.pageY - skillDiv.offsetTop
 
-    skillDiv.style.setProperty('--x', x + 'px')
-    skillDiv.style.setProperty('--y', y + 'px')
-}
+        skillDiv.style.setProperty('--x', x + 'px')
+        skillDiv.style.setProperty('--y', y + 'px')
+        
+    })
+})

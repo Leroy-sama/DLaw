@@ -119,40 +119,61 @@ img {
 	gap: 1.5em;
 }
 
-.skills div {
+.skil-div {
 	position: relative;
-	display: inline-block;
+	background-color: #207888;
+	padding: 1em;
+	cursor: pointer;
 	overflow: hidden;
 }
 
-.skills div .skil {
-	position: relative;
-	z-index: 1;
+.skil {
+	text-align: center;
 }
 
-.skills dev::before {
-	content: '';
+.skil-div img {
+	max-width: 30px;
 	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: opacity 0.4s 0.15s;
+	z-index: 1111;
+}
+
+.skil-div:hover img {
+	opacity: 1;
+	transition: opacity 0.4s;
+}
+
+.skil-div .skil {
+	position: relative;
+	pointer-events: none;
+	transition: opacity 0.4s 0.15s;
+}
+
+.skil-div:hover .skil {
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+
+.skil-div::after {
+	position: absolute;
+	content: "";
 	top: var(--y);
 	left: var(--x);
 	transform: translate(-50%, -50%);
-	width: 0;
 	height: 0;
+	width: 0;
+	background-color: var(--primaryColorOffset);
 	border-radius: 50%;
-	background: #ff2957;
-	transition: width 0.5s, height 0.5s;
+	transition: 0.5s ease-out, left 0s, top 0s;
 }
 
-.skills div:hover::before {
-	width: 300px;
-	height: 300px;
-}
-
-.skil {
-	background-color: #207888;
-	padding: 1em;
-	display: flex;
-	justify-content: center;
+.skil-div:hover::after {
+	height: 800px;
+	width: 800px;
 }
 
 /* PROJECTS */
@@ -223,7 +244,6 @@ img {
 }
 
 .item__link {
-	
 	color: var(--color--06);
 	padding: 0.5em;
 	border: 1px solid var(--color--06);
@@ -318,7 +338,6 @@ img {
 		grid-template-columns: 1fr 1fr; */
 		max-width: 1200px;
 		margin: 0 auto;
-		
 	}
 
 	.skills__heading {
