@@ -1,182 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/assets/style.css" />
+		<title>Portfolio</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/assets/style.css">
-    <title>Portfolio</title>
-</head>
+	<body>
+		<div class="desc">
+			<a href="https://github.com/Leroy-sama">
+				<img src="./assets/icons/ri--github-fill.svg" alt="" />
+			</a>
+			<a href="mailto:ntruderleroy@gmail.com">
+				<img
+					src="./assets/icons/material-symbols--mail-outline.svg"
+					alt=""
+				/>
+			</a>
+		</div>
+		<section id="hero">
+			<div class="description">
+				<div class="desc1">
+					<span>
+						Hello, my name is <span class="nombre">Leroy.</span>
+					</span>
+					<h1 class="hero__head">I make the web work</h1>
+					<p class="hero__desc">
+						A dedicated Frontend Developer with a keen focus on
+						creating immersive and responsive web experiences.
+					</p>
+					<a class="cta" href="mailto:ntruderleroy@gmail.com"
+						>contact me</a
+					>
+				</div>
+			</div>
+		</section>
+		<section class="about">
+			<div class="about__wrapper">
+				<h1 class="about__head">About Me</h1>
+				<div class="aboutss">
+					<div class="about1">
+						<h2 class="about1__head">Who am I</h2>
+						<p class="about__desc">
+							Hi! I'm Leroy, a software developer with a passion
+							for creating beautiful and functional websites. I
+							have a strong foundation in JavaScript and am
+							currently learning TypeScript and Nuxt. When I'm not
+							coding I'm usually playing FIFA or spending time
+							with friends 😊 Feel free to reach out to me if you
+							have any questions or just want to chat!
+						</p>
+					</div>
+					<div class="about2">
+						<h2 class="about2__head">My skills</h2>
+						<div class="skills">
+							<div  class="skil-div">
+								<span class="skil">TypeScript</span>
+							</div>
+							<div class="skil-div">
+								<span class="skil">JavaScript</span>
+							</div>
+							<div class="skil-div">
+								<span class="skil">Vue</span>
+							</div>
+							<div class="skil-div">
+								<span class="skil">TailwindCSS</span>
+							</div>
+							<div class="skil-div">
+								<span class="skil">CSS3</span>
+							</div>
+							<div class="skil-div">
+								<span class="skil">HTML5</span>
+							</div>
+							<div class="skil-div">
+								<span class="skil">Firebase</span>
+							</div>
+							<div class="skil-div">
+								<span class="skil">Figma</span>
+							</div>
+							<div class="skil-div">
+								<span class="skil">Git</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-<body>
+		<section id="projects" class="projects">
+			<div class="projects__wrapper">
+				<h2 class="projects__head">Some things I have built</h2>
+				<div class="projects__container">
+					<div class="project__item">
+						<img
+							src="./assets/img/djxboy.png"
+							alt="challenge 2"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3 class="project__item-head">Dj Xboy 254</h3>
+							<p class="project__tags">
+								<span>Vue.js</span>
+								<span>CSS</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://dj-xboy.vercel.app/"
+									target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="project__item">
+						<img
+							src="assets/img/kijivu.png"
+							alt="challenge 1"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3 class="project__item-head">Kijivu Afrika</h3>
+							<p class="project__tags">
+								<span>Vue.js</span>
+								<span>CSS3</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://kijivu-afrika.vercel.app/"
+									target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="project__item">
+						<img
+							src="assets/img/kobi blogs.png"
+							alt="djconnect"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3 class="project__item-head">KobiBlogs</h3>
+							<p class="project__tags">
+								<span>Vue.js</span>
+								<span>CSS</span>
+								<span>Firebase</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://kobi-blogs.vercel.app/home"
+									target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="project__item">
+						<img
+							src="assets/img/stories.png"
+							alt="djconnect"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3 class="project__item-head">
+								Stories na Mayouth
+							</h3>
+							<p class="project__tags">
+								<span>HTML</span>
+								<span>CSS</span>
+								<span>JavaScript</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://youth-tank.vercel.app/"
+									target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="challenges__wrapper">
+				<h2 class="fem-challenges">Frontend Mentor Challenges</h2>
+				<div class="challenges__container">
+					<div class="challenge__item">
+						<img
+							src="assets/img/rest-countries-api.png"
+							alt="news homepage"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3>Rest Countries API</h3>
+							<p class="project__tags">
+								<span>Vue.js</span>
+								<span>TailwindCSS</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://tailwind-landing-page-sage.vercel.app/"
+									target="_blank"
+									>Visit Project</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="challenge__item">
+						<img
+							src="assets/img/advice-gen.png"
+							alt="advice-gen"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3>Advice generator app</h3>
+							<p class="project__tags">
+								<span>HTML</span>
+								<span>CSS</span>
+								<span>JavaScript</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://advice-generator-two-nu.vercel.app/"
+									target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="challenge__item">
+						<img
+							src="assets/img/sunnyside.png"
+							alt="signup component"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3>Sunny-side landing page</h3>
+							<p class="project__tags">
+								<span>HTML</span>
+								<span>CSS</span>
+								<span>JavaScript</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://sunnyside-landing-page-ten.vercel.app/"
+									target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p class="checkout">
+					Check out more of my challenges at
+					<a href="https://www.frontendmentor.io/profile/Leroy-sama"
+						>Frontend Mentor</a
+					>
+				</p>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="contact__wrapper">
+				<div class="contact__text">
+					<div class="span-div">
+						<span>contact</span>
+					</div>
+					<h2 class="contact__heading">Get In Touch</h2>
+					<p class="contact__description">
+						Got a question or proposal, or just want to say hello?
+						Feel free to reach out to me
+					</p>
+					<div class="cta-box">
+						<a class="cta cta__last" href="mailto:ntruderleroy@gmail.com">Say Hello</a>
+					</div>
+				</div>
+				<div class="links">
+					<div class="the__links">
+						<a href="https://github.com/Leroy-sama/"
+							><img
+								src="./assets/icons/ri--github-fill.svg"
+								alt=""
+						/></a>
+						<a href="mailto:ntruderleroy@gmail.com"
+							><img
+								src="./assets/icons/material-symbols--mail-outline.svg"
+								alt=""
+						/></a>
+						<a
+							href="https://www.linkedin.com/in/leroy-mogire-116a92244/"
+						>
+							<img
+								src="./assets/icons/mdi--linkedin.svg"
+								alt=""
+							/>
+						</a>
+						<a href="https://www.instagram.com/mogire_leroy/">
+							<img
+								src="./assets/icons/hugeicons--instagram.svg"
+								alt=""
+							/>
+						</a>
+					</div>
+				</div>
+				<p class="footer__text">
+					Crafted by <span class="namaewa">Riroi</span>
+				</p>
+			</div>
+		</section>
 
-    <header class="header">
-        <nav>
-            <a class="logo" href="#">
-                <h2>MLM</h2>
-            </a>
-            <div class="icons">
-                <a href="https://github.com/Leroy-sama/">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="mailto:ntruderleroy@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
-
-        </nav>
-    </header>
-
-    <section id="about">
-        <div class="description">
-            <span>
-                Hello, my name is <span class="nombre">Leroy.</span>
-            </span>
-            <h1 class="about__head">
-                I make the web work
-            </h1>
-            <p class="about__desc">
-                A dedicated Frontend Developer with a keen focus on creating immersive and responsive web
-                experiences. 
-            </p>
-            <a class="cta" href="mailto:ntruderleroy@gmail.com">contact me</a>
-        </div>
-        <!-- <div class="skills-container">
-            <h3 class="skills__heading">My skills</h3>
-            <div class="skills">
-                <div>HTML 5</div>
-                <div>CSS 3</div>
-                <div>JavaScript</div>
-                <div>Vue.js</div>
-                <div>Tailwind</div>
-                <div>Firebase</div>
-                <div>TypeSript</div>
-            </div>
-        </div> -->
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="projects__wrapper">
-            <h2 class="projects__head">Some things I have built</h2>
-            <div class="projects__container">
-                <div class="project__item">
-                    <img src="assets/img/djxboy.png" alt="challenge 2" width="343">
-                    <div class="item__info">
-                        <h3 class="project__item-head">Dj Xboy 254</h3>
-                    <p class="project__tags">
-                        <span>Vue.js</span>
-                        <span>CSS</span>
-                    </p>
-                    </div>
-                    <div class="project__links">
-                        <a href="https://dj-xboy.vercel.app/" target="_blank">View Project</a>
-                        <a href="https://github.com/Leroy-sama/DJXboy" target="_blank">View Code</a>
-                    </div>
-                </div>
-                <div class="project__item">
-                    <img src="assets/img/akatsuki.png" alt="challenge 1" width="343">
-                    <h3 class="project__item-head">Akatsuki</h3>
-                    <p class="project__tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </p>
-                    <div class="project__links">
-                        <a href="https://akatsuki-eight.vercel.app/" target="_blank">View Project</a>
-                        <a href="https://github.com/Leroy-sama/Akatsuki" target="_blank">View Code</a>
-                    </div>
-                </div>
-                
-                <div class="project__item">
-                    <img src="assets/img/kobi blogs.png" alt="djconnect" width="343">
-                    <div class="item__info">
-                        <h3 class="project__item-head">KobiBlogs</h3>
-                    <p class="project__tags">
-                        <span>Vue.js</span>
-                        <span>CSS</span>
-                    </p>
-                    </div>
-                    <div class="project__links">
-                        <a href="https://kobi-blogs.vercel.app/home" target="_blank">View Project</a>
-                        <a href="https://github.com/Leroy-sama/KobiBlogs" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="challenges__wrapper">
-            <h2 class="fem-challenges">Frontend Mentor Challenges</h2>
-            <div class="challenges__container">
-                <div class="challenge__item">
-                    <img src="assets/img/loopstudios.png" alt="news homepage" width="343">
-                    <h3>Loopstudios Landing Page</h3>
-                    <p class="project__tags">
-                        <span>HTML</span>
-                        <span>Tailwind CSS</span>
-                        <span>JavaScript</span>
-                    </p>
-                    <div class="project__links">
-                        <a href="https://tailwind-landing-page-sage.vercel.app/" target="_blank">Visit Project</a>
-                        <a href="https://github.com/Leroy-sama/tailwind-landing" target="_blank">View Code</a>
-                    </div>
-                </div>
-                <div class="challenge__item">
-                    <img src="assets/img/sunnyside.png" alt="signup component" width="343">
-                    <h3>Sunny-side landing page</h3>
-                    <p class="project__tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </p>
-                    <div class="project__links">
-                        <a href="https://sunnyside-landing-page-ten.vercel.app/" target="_blank">View Project</a>
-                        <a href="https://github.com/Leroy-sama/sunnyside" target="_blank">View Code</a>
-                    </div>
-                </div>
-                <div class="challenge__item">
-                    <img src="assets/img/advice-gen.png" alt="advice-gen" width="343">
-                    <h3>Advice generator app</h3>
-                    <p class="project__tags">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </p>
-                    <div class="project__links">
-                        <a href="https://sunnyside-landing-page-ten.vercel.app/" target="_blank">View Project</a>
-                        <a href="https://github.com/Leroy-sama/sunnyside" target="_blank">View Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div class="contact__wrapper">
-            <div class="contact__text">
-                <span>contact</span>
-                <h2 class="contact__heading">Get In Touch</h2>
-                <p class="contact__description">
-                    Got a question or proposal, or just want to say hello? Feel free to reach out to me
-                </p>
-                <div class="cta-box">
-                    <a class="cta cta__last" href="#">Say Hello</a>
-                </div>
-            </div>
-            <div class="links">
-                <div class="the__links">
-                    <a href="https://github.com/Leroy-sama/"><i class="fa-brands fa-github"></i></a>
-                    <a href="mailto:ntruderleroy@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                </div>
-            </div>
-            <p>
-                Crafted with <span><i class="fa-solid fa-heart"></i></span>
-            </p>
-        </div>
-
-    </section>
-
-    <script src="assets/script.js"></script>
-</body>
-
+		<script src="assets/script.js"></script>
+	</body>
 </html>
