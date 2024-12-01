@@ -12,7 +12,7 @@
 
 :root {
 	--color--01: hsl(0, 0%, 8%);
-	--color--02: hsl(0, 0%, 14%);
+	--color--02: hsl(0, 25%, 22%);
 	--color--03: hsl(153, 71%, 59%);
 	--color--04: hsl(0, 0%, 100%);
 	--color--05: hsl(0, 0%, 70%);
@@ -21,6 +21,8 @@
 	--primaryColorOffset: #ff2957;
 	--textColor: #ffffff;
 	--textColorOffset: #f4f4f4;
+
+	--ff-accent: "Playfair Display", serif;
 }
 
 body {
@@ -30,6 +32,11 @@ body {
 
 img {
 	width: 100%;
+}
+
+.wrapper {
+	width: min(90%, 80rem);
+	margin-inline: auto;
 }
 
 .desc {
@@ -54,15 +61,15 @@ img {
 	color: var(--primaryColorOffset);
 }
 
-.description span {
+.desc1 span {
 	color: var(--textColorOffset);
 	display: inline-block;
 	font-size: 1.5rem;
 }
 
 .hero__head {
-	font-family: "Playfair Display";
-	font-size: 3rem;
+	font-family: var(--ff-accent);
+	font-size: 4rem;
 	color: var(--textColor);
 }
 
@@ -85,17 +92,13 @@ img {
 
 /* AbOUT ME */
 
-.about__wrapper {
-	max-width: 1200px;
-	margin: 0 1.5em;
-	color: var(--textColor);
-}
-
 .about__head {
 	font-size: 2rem;
 	text-align: center;
 	padding: 1em 0;
+	color: var(--textColor);
 	text-decoration: underline;
+	font-family: var(--ff-accent);
 }
 
 .aboutss {
@@ -111,6 +114,7 @@ img {
 
 .about__desc {
 	line-height: 2;
+	color: var(--textColorOffset);
 }
 
 .skills {
@@ -129,6 +133,7 @@ img {
 
 .skil {
 	text-align: center;
+	color: var(--textColorOffset);
 }
 
 .skil-div img {
@@ -182,6 +187,7 @@ img {
 	font-size: 2rem;
 	text-decoration: underline;
 	text-align: center;
+	font-family: var(--ff-accent);
 }
 
 .projects__wrapper,
@@ -208,9 +214,11 @@ img {
 	/* max-width: 500px; */
 }
 
-.project__item img {
-	aspect-ratio: 16 /9;
+.project__item img,
+.challenge__item img {
+	aspect-ratio: 16 / 9;
 	object-fit: cover;
+	max-width: 100%;
 }
 
 .project__item-head,
@@ -326,6 +334,20 @@ img {
 	padding: 1.5rem 0;
 }
 
+.namaewa {
+	color: var(--textColor);
+	text-decoration: underline;
+}
+
+.namaewa:hover {
+	color: var(--primaryColorOffset);
+}
+
+.ig-icon g {
+	color: green;
+	stroke: green;
+}
+
 /* 600px */
 @media (min-width: 37.5em) {
 	nav {
@@ -349,10 +371,9 @@ img {
 		gap: 1.5em;
 	}
 
-	.projects {
-		max-width: 1200px;
-		margin: 0 auto;
-		padding: 3rem 0;
+	.projects__wrapper {
+		width: min(90%, 80rem);
+		margin-inline: auto;
 	}
 
 	.projects__container,
@@ -362,11 +383,6 @@ img {
 	}
 
 	/* About Me */
-
-	.about__wrapper {
-		max-width: 1200px;
-		margin-inline: auto;
-	}
 
 	.aboutss {
 		display: flex;
@@ -384,7 +400,7 @@ img {
 	/* CONTACT */
 
 	#contact {
-		max-width: 1200px;
-		margin: 0 auto;
+		width: min(90%, 80rem);
+		margin-inline: auto;
 	}
 }

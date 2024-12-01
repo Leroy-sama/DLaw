@@ -20,7 +20,7 @@
 			</a>
 		</div>
 		<section id="hero">
-			<div class="description">
+			<div class="wrapper">
 				<div class="desc1">
 					<span>
 						Hello, my name is <span class="nombre">Leroy.</span>
@@ -37,7 +37,7 @@
 			</div>
 		</section>
 		<section class="about">
-			<div class="about__wrapper">
+			<div class="wrapper">
 				<h1 class="about__head">About Me</h1>
 				<div class="aboutss">
 					<div class="about1">
@@ -122,9 +122,55 @@
 		</section>
 
 		<section id="projects" class="projects">
-			<div class="projects__wrapper">
+			<div class="wrapper">
 				<h2 class="projects__head">Some things I have built</h2>
 				<div class="projects__container">
+					<div class="project__item">
+						<img
+							src="assets/img/kobi blogs.png"
+							alt="djconnect"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3 class="project__item-head">KobiBlogs</h3>
+							<p class="project__tags">
+								<span>Vue.js</span>
+
+								<span>Firebase</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://kobi-blogs.vercel.app/home"
+									target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
+					<div class="project__item">
+						<img
+							src="assets/img/nuxtcipes.png"
+							alt="nuxtcipes"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3 class="project__item-head">Nuxtcipes</h3>
+							<p class="project__tags">
+								<span>Nuxt</span>
+
+								<span>Tailwind</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://nuxt-first-app-recipes-json.vercel.app/"
+									target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
 					<div class="project__item">
 						<img
 							src="./assets/img/djxboy.png"
@@ -135,7 +181,6 @@
 							<h3 class="project__item-head">Dj Xboy 254</h3>
 							<p class="project__tags">
 								<span>Vue.js</span>
-								<span>CSS</span>
 							</p>
 							<div class="item__link-box">
 								<a
@@ -157,7 +202,6 @@
 							<h3 class="project__item-head">Kijivu Afrika</h3>
 							<p class="project__tags">
 								<span>Vue.js</span>
-								<span>CSS3</span>
 							</p>
 							<div class="item__link-box">
 								<a
@@ -169,38 +213,15 @@
 							</div>
 						</div>
 					</div>
-					<div class="project__item">
-						<img
-							src="assets/img/kobi blogs.png"
-							alt="djconnect"
-							width="343"
-						/>
-						<div class="item__info">
-							<h3 class="project__item-head">KobiBlogs</h3>
-							<p class="project__tags">
-								<span>Vue.js</span>
-								<span>CSS</span>
-								<span>Firebase</span>
-							</p>
-							<div class="item__link-box">
-								<a
-									class="item__link"
-									href="https://kobi-blogs.vercel.app/home"
-									target="_blank"
-									>View Project</a
-								>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
-			<div class="challenges__wrapper">
+			<div class="wrapper">
 				<h2 class="fem-challenges">Frontend Mentor Challenges</h2>
 				<div class="challenges__container">
 					<div class="challenge__item">
 						<img
 							src="assets/img/rest-countries-api.png"
-							alt="news homepage"
+							alt="rest-countries-api"
 							width="343"
 						/>
 						<div class="item__info">
@@ -214,7 +235,7 @@
 									class="item__link"
 									href="https://api-countries-rest.vercel.app"
 									target="_blank"
-									>Visit Project</a
+									>View Project</a
 								>
 							</div>
 						</div>
@@ -265,6 +286,29 @@
 							</div>
 						</div>
 					</div>
+					<div class="challenge__item">
+						<img
+							src="assets/img/newshomepage.png"
+							alt="news homepage"
+							width="343"
+						/>
+						<div class="item__info">
+							<h3>News Homepage</h3>
+							<p class="project__tags">
+								<span>HTML</span>
+								<span>CSS</span>
+								<span>JavaScript</span>
+							</p>
+							<div class="item__link-box">
+								<a
+									class="item__link"
+									href="https://api-countries-rest.vercel.app"
+									target="_blank"
+									>View Project</a
+								>
+							</div>
+						</div>
+					</div>
 				</div>
 				<p class="checkout">
 					Check out more of my challenges at
@@ -275,7 +319,7 @@
 			</div>
 		</section>
 		<section id="contact">
-			<div class="contact__wrapper">
+			<div class="wrapper">
 				<div class="contact__text">
 					<div class="span-div">
 						<span>contact</span>
@@ -314,15 +358,35 @@
 							/>
 						</a>
 						<a href="https://www.instagram.com/mogire_leroy/">
-							<img
-								src="./assets/icons/hugeicons--instagram.svg"
-								alt=""
-							/>
+							<svg
+								class="ig-icon"
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+							>
+								<g
+									fill="none"
+									stroke="#fff"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="1.5"
+									color="#fff"
+								>
+									<path
+										d="M2.5 12c0-4.478 0-6.718 1.391-8.109S7.521 2.5 12 2.5c4.478 0 6.718 0 8.109 1.391S21.5 7.521 21.5 12c0 4.478 0 6.718-1.391 8.109S16.479 21.5 12 21.5c-4.478 0-6.718 0-8.109-1.391S2.5 16.479 2.5 12"
+									/>
+									<path
+										d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0m1.008-5.5h-.01"
+									/>
+								</g>
+							</svg>
 						</a>
 					</div>
 				</div>
 				<p class="footer__text">
-					Crafted by <span class="namaewa">Riroi</span>
+					Designed and crafted by
+					<a href="https://d-law.vercel.app" class="namaewa">Riroi</a>
 				</p>
 			</div>
 		</section>
