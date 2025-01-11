@@ -21,45 +21,67 @@
 		</div>
 		<section id="hero">
 			<div class="wrapper">
-				<div class="desc1">
-					<span>
-						Hello, my name is <span class="nombre">Leroy</span>
-					</span>
-					<h1 class="hero__head">A Frontend Developer</h1>
-					<p class="hero__desc">
-						A dedicated developer with a passion for building
-						aesthetic, responsive and easy to use web experinces.
-					</p>
-					<a class="cta" href="mailto:ntruderleroy@gmail.com"
-						>Contact Me</a
-					>
-				</div>
-			</div>
-		</section>
-		<section class="about">
-			<div class="wrapper">
-				<h1 class="about__head">About Me</h1>
-				<div class="aboutss">
-					<div class="about1">
-						<p class="about__desc">
-							Hi! I'm Leroy, a software developer with a passion
-							for creating beautiful and functional websites. I
-							have a strong foundation in JavaScript and am
-							currently learning TypeScript and Nuxt. When I'm not
-							coding I'm usually playing FIFA or spending time
-							with friends 😊 Feel free to reach out to me if you
-							have any questions or just want to chat!
+				<div class="hero-wrap">
+					<div class="desc1">
+						<span>
+							Hello, my name is <span class="nombre">Leroy</span>
+						</span>
+						<h1 class="hero__head">A Frontend Developer</h1>
+						<p class="hero__desc">
+							A dedicated developer with a passion for building
+							aesthetic, responsive and easy to use web
+							experinces. I have a strong foundation in JavaScript
+							and TypeScript and my weapon of choice is Vue.js.
 						</p>
+						<a class="cta" href="mailto:ntruderleroy@gmail.com"
+							>Contact Me</a
+						>
 					</div>
-					<div class="about2">
-						<img
-							src="./assets/img/IMG_20240615_114421549.jpg"
-							alt=""
-						/>
+					<div class="desc2">
+						<img src="./assets/vectors/4401280.jpg" alt="" />
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<div class="wrapper">
+			<div class="skills">
+				<div class="skill">
+					<img src="./assets/icons/ion--logo-javascript.svg" alt="" />
+					<p>JavaScript</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./assets/icons/devicon-plain--typescript.svg"
+						alt=""
+					/>
+					<p>TypeScript</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/icons/mdi--vuejs.svg" alt="" />
+					<p>Vue js</p>
+				</div>
+				<div class="skill">
+					<img
+						src="./assets/icons/vscode-icons--file-type-tailwind.svg"
+						alt=""
+					/>
+					<p>TailwindCSS</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/icons/ri--firebase-fill.svg" alt="" />
+					<p>Firebase</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/icons/hugeicons--figma.svg" alt="" />
+					<p>Figma</p>
+				</div>
+				<div class="skill">
+					<img src="./assets/icons/mdi--git.svg" alt="" />
+					<p>Git</p>
+				</div>
+			</div>
+		</div>
 
 		<section id="projects" class="projects">
 			<div class="wrapper">
@@ -73,11 +95,11 @@
 						/>
 						<div class="item__info">
 							<h3 class="project__item-head">KobiBlogs</h3>
-							<p class="project__tags">
+							<div class="project__tags">
 								<span>Vue.js</span>
 
 								<span>Firebase</span>
-							</p>
+							</div>
 							<div class="item__link-box">
 								<a
 									class="item__link"
@@ -96,11 +118,11 @@
 						/>
 						<div class="item__info">
 							<h3 class="project__item-head">Nuxtcipes</h3>
-							<p class="project__tags">
+							<div class="project__tags">
 								<span>Nuxt</span>
 								<span>TypeScript</span>
 								<span>Tailwind</span>
-							</p>
+							</div>
 							<div class="item__link-box">
 								<a
 									class="item__link"
@@ -113,36 +135,17 @@
 					</div>
 					<div class="project__item">
 						<img
-							src="./assets/img/djxboy.png"
-							alt="challenge 2"
-							width="343"
-						/>
-						<div class="item__info">
-							<h3 class="project__item-head">Dj Xboy 254</h3>
-							<p class="project__tags">
-								<span>Vue.js</span>
-							</p>
-							<div class="item__link-box">
-								<a
-									class="item__link"
-									href="https://dj-xboy.vercel.app/"
-									target="_blank"
-									>View Project</a
-								>
-							</div>
-						</div>
-					</div>
-					<div class="project__item">
-						<img
-							src="assets/img/kijivu.png"
+							src="assets/img/fuzu.png"
 							alt="challenge 1"
 							width="343"
 						/>
 						<div class="item__info">
-							<h3 class="project__item-head">Kijivu Afrika</h3>
-							<p class="project__tags">
+							<h3 class="project__item-head">Fuzu Robotics</h3>
+							<div class="project__tags">
 								<span>Vue.js</span>
-							</p>
+								<span>TypeScript</span>
+								<span>Scss</span>
+							</div>
 							<div class="item__link-box">
 								<a
 									class="item__link"
@@ -166,10 +169,10 @@
 						/>
 						<div class="item__info">
 							<h3>Rest Countries API</h3>
-							<p class="project__tags">
+							<div class="project__tags">
 								<span>Vue.js</span>
 								<span>TailwindCSS</span>
-							</p>
+							</div>
 							<div class="item__link-box">
 								<a
 									class="item__link"
@@ -188,11 +191,11 @@
 						/>
 						<div class="item__info">
 							<h3>Advice generator app</h3>
-							<p class="project__tags">
+							<div class="project__tags">
 								<span>HTML</span>
 								<span>CSS</span>
 								<span>JavaScript</span>
-							</p>
+							</div>
 							<div class="item__link-box">
 								<a
 									class="item__link"
@@ -211,11 +214,11 @@
 						/>
 						<div class="item__info">
 							<h3>Sunny-side landing page</h3>
-							<p class="project__tags">
+							<div class="project__tags">
 								<span>HTML</span>
 								<span>CSS</span>
 								<span>JavaScript</span>
-							</p>
+							</div>
 							<div class="item__link-box">
 								<a
 									class="item__link"
@@ -234,15 +237,15 @@
 						/>
 						<div class="item__info">
 							<h3>News Homepage</h3>
-							<p class="project__tags">
+							<div class="project__tags">
 								<span>HTML</span>
 								<span>CSS</span>
 								<span>JavaScript</span>
-							</p>
+							</div>
 							<div class="item__link-box">
 								<a
 									class="item__link"
-									href="https://api-countries-rest.vercel.app"
+									href="https://news-homepage-rouge.vercel.app/"
 									target="_blank"
 									>View Project</a
 								>
