@@ -157,9 +157,10 @@ img {
 
 .skills {
 	display: flex;
+	justify-content: center;
 	gap: 1rem;
-	overflow-x: auto;
-	white-space: nowrap;
+	flex-wrap: wrap;
+	padding: 3rem 0 2rem 0;
 }
 
 .skill {
