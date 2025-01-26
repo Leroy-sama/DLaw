@@ -1,12 +1,20 @@
-const skillDiv = document.querySelectorAll('.skil-div')
+const scrollers = document.querySelectorAll(".scroller");
 
-skillDiv.forEach(skillDiv => {
-    skillDiv.addEventListener('mouseover', (e) => {
-        let x = e.pageX - skillDiv.offsetLeft
-        let y = e.pageY - skillDiv.offsetTop
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+	addAnimation();
+}
 
-        skillDiv.style.setProperty('--x', x + 'px')
-        skillDiv.style.setProperty('--y', y + 'px')
-        
-    })
-})
+function addAnimation() {
+	scrollers.forEach((scroller) => {
+		scroller.setAttribute("data-animated", true);
+
+		const scrollerInner = scroller.querySelector(".scroller__inner");
+		const scrollerContent = Array.from(scrollerInner.children);
+
+		scrollerContent.forEach((item) => {
+			const duplicatedItem = item.cloneNode(true);
+			duplicatedItem.setAttribute("aria-hidden", true);
+			scrollerInner.appendChild(duplicatedItem);
+		});
+	});
+}

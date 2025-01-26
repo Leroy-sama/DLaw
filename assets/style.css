@@ -155,12 +155,22 @@ img {
 	border-radius: 25% 0 30px 10px;
 }
 
+.scroller {
+	max-width: 1440px;
+}
+
 .skills {
+	padding: 3rem 0 2rem 0;
 	display: flex;
 	justify-content: center;
+}
+
+.scroller__inner {
+	display: flex;
+	justify-content: center;
+
 	gap: 1rem;
 	flex-wrap: wrap;
-	padding: 3rem 0 2rem 0;
 }
 
 .skill {
@@ -176,6 +186,41 @@ img {
 
 .skill img {
 	max-width: 25px;
+}
+
+.scroller[data-animated="true"] {
+	overflow: hidden;
+	-webkit-mask: linear-gradient(
+		90deg,
+		transparent,
+		white 20%,
+		white 80%,
+		transparent
+	);
+	mask: linear-gradient(
+		90deg,
+		transparent,
+		white 20%,
+		white 80%,
+		transparent
+	);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+	width: max-content;
+	flex-wrap: nowrap;
+	animation: scroll var(--_animation-duration, 40s)
+		var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+	--_animation-direction: reverse;
+}
+
+@keyframes scroll {
+	to {
+		transform: translate(calc(-50% - 0.5rem));
+	}
 }
 
 /* PROJECTS */
