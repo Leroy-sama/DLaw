@@ -118,6 +118,11 @@ img {
 	background-color: var(--primaryColor);
 }
 
+.anoth {
+	display: flex;
+	justify-content: center;
+}
+
 /* AbOUT ME */
 
 .about {
@@ -243,18 +248,26 @@ img {
 	color: var(--textColorOffset);
 }
 
-.projects__container,
-.challenges__container {
+.projects__container {
 	display: grid;
 	grid-template-columns: 1fr;
 	gap: 2em;
 }
 
-.project__item,
-.challenge__item {
+.challenges__container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 2rem;
+}
+
+.project__item {
 	background-color: #16202e;
 	display: flex;
 	flex-direction: column;
+}
+
+.challenge__item {
+	background-color: #16202e;
 }
 
 .project__item img,
@@ -272,6 +285,10 @@ img {
 .item__info h3 {
 	color: var(--textColorOffset);
 	font-size: 1.3rem;
+}
+
+.project__item-desc {
+	color: var(--textColorOffset);
 }
 
 .item__info {
@@ -414,8 +431,7 @@ img {
 		margin-inline: auto;
 	}
 
-	.project__item,
-	.challenge__item {
+	.project__item {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
